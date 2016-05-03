@@ -5,6 +5,7 @@
     <title>serviceOrder</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
@@ -23,8 +24,57 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <div class="ui attached stackable menu">
+            <div class="ui container">
+                <!--<div class="ui secondary pointing menu">-->
+                <!--<div class="ui bottom attached tabular menu">-->
+                <a class="item activate" ui-sref="home">
+                    <i class="home icon"></i> Home
+                </a>
+                <div class="ui simple dropdown item">
+                    <i class="users icon"></i> Users
+                    <i class="dropdown icon"></i>
+                    <div class="menu item ">
+                        <div class="header">
+                            <i class="cubes icon"></i> Users Actions
+                        </div>
+                        <a class="item" ui-sref="mainUsers"><i class="add user icon"></i> Main User's</a>
+                        <a class="item" ui-sref="listUsers"><i class="print icon"></i> List</a>
+                    </div>
+                </div>
+                <div class="ui simple dropdown item">
+                    <i class="file text icon"></i> Order of Service
+                    <i class="dropdown icon"></i>
+                    <div class="menu item ">
+                        <div class="header">
+                            <i class="cubes icon"></i> O.S Actions
+                        </div>
+                        <a class="item" ui-sref="myOs"><i class="configure icon"></i> My O.S's</a>
+                        <a class="item" ui-sref="mainOs"><i class="add circle icon"></i> Main O.S's</a>
+                        <a class="item" ui-sref="listOs"><i class="bar chart icon"></i> List</a>
+                    </div>
+                </div>
+                <div class="right menu">
+                    <div class="item">
+                        <div class="ui transparent icon input">
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+                <a class="item">
+                    <i class="search link layout icon"></i>
+                </a>
+            </div>
+        </div>
 
-    <div ui-view></div>
+     <div class="ui container">
+        <div class="ui header"></div>
+        <div class="ui header"></div>
+        <div class="ui header"></div>
+        <div class="ui-view">
+
+        </div>
+    </div>
 
     <!-- build:js(src) scripts/vendor.js -->
     <!-- bower:js -->

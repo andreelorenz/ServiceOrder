@@ -3,21 +3,21 @@
         <label>Address</label>
         <div class="fields">
             <div class="twelve wide field">
-                <input type="text" ng-model="{{object}}.address" placeholder="Street Address">
+                <input type="text" ng-model="object.address" placeholder="Street Address">
             </div>
             <label></label>
             <div class="twelve wide field">
-                <input type="text" ng-model="{{object}}.neighborhood" placeholder="Neighborhood">
+                <input type="text" ng-model="object.neighborhood" placeholder="Neighborhood">
             </div>
             <div class="four wide field">
-                <input type="number" ng-model="{{object}}.number" placeholder="Nº#">
+                <input type="number" ng-model="object.number" placeholder="Nº#">
             </div>
         </div>
     </div>
     <div class="two fields">
         <div class="field">
             <label>State</label>
-            <select class="ui fluid dropdown" ng-model="{{object}}.state">
+            <select class="ui fluid dropdown" ng-model="object.state">
                 <option value="">State</option>
                 <option value="">Selecione</option>
                 <option value="AC">Acre</option>
@@ -52,7 +52,7 @@
         <div class="field">
             <label>Country</label>
             <div class="field">
-                <input type="text" ng-model="{{object}}.country" placeholder="Country">
+                <input type="text" ng-model="object.country" placeholder="Country">
             </div>
         </div>
     </div>

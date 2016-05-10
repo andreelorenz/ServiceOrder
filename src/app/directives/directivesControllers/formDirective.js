@@ -1,6 +1,6 @@
-angular.module("serviceOrder").directive("userForm", function () {
+angular.module("serviceOrder").directive("wiForm", function () {
    return {
-    templateUrl : "app/directives/directivePartials/form.html",
+    templateUrl : "app/directives/directivePartials/wiForm.html",
     scope: {
         
     }

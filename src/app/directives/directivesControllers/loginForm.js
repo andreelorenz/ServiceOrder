@@ -1,8 +1,8 @@
-angular.module("serviceOrder").directive("loginForm", function () {
+angular.module("serviceOrder").directive("wiLoginForm", function () {
     return {
-        templateUrl: "app/directives/directivesComponents/loginForm.html",
+        templateUrl: "app/directives/directivesComponents/wiLoginForm.html",
         scope: {
-            object: "@",
+            object: "=",
             typePassword: "@",
         }
     };

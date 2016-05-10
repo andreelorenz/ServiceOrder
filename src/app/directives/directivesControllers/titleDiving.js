@@ -1,6 +1,6 @@
-angular.module("serviceOrder").directive("titleDiving", function () {
+angular.module("serviceOrder").directive("wiTitleDiving", function () {
     return {
-        templateUrl: "app/directives/directivesComponents/titleDiving.html",
+        templateUrl: "app/directives/directivesComponents/wiTitleDiving.html",
         scope: {
             icon: "@",
             text: "@"

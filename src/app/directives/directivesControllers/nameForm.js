@@ -1,6 +1,6 @@
-angular.module("serviceOrder").directive("nameForm", function () {
+angular.module("serviceOrder").directive("wiNameForm", function () {
     return {
-        templateUrl: "app/directives/directivesComponents/nameForm.html",
+        templateUrl: "app/directives/directivesComponents/wiNameForm.html",
         scope: {
             required: "@",
             label: "@",
@@ -8,7 +8,7 @@ angular.module("serviceOrder").directive("nameForm", function () {
             valuefirst: "@",
             placeholderlast: "@",
             valuelast: "@",
-            object: "@"
+            object: "="
         }
     };
 });

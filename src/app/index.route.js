@@ -17,13 +17,13 @@
                         .state('mainUsers', {
                             url: '/mainUsers',
                             templateUrl: 'app/partials/mainUsers.html',
-                            controller: 'UsersController',
+                            controller: 'PersonFormController',
                             controllerAs: 'mainUsers'
                         })
                         .state('mainOs', {
                             url: '/mainOs',
                             templateUrl: 'app/partials/mainOs.html',
-                            controller: 'MainOsController',
+                            controller: 'personFormController',
                             controllerAs: 'mainOs'
                         })
                         .state('myOs', {

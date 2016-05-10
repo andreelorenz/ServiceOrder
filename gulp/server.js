@@ -11,7 +11,7 @@ var util = require('util');
 
 var proxyMiddleware = require('http-proxy-middleware');
 
-function browserSyncInit(baseDir, browser) {
+function browserSyncInit(baseDir, backendUrl, browser) {
   browser = browser === undefined ? 'default' : browser;
 
   var routes = null;
@@ -34,6 +34,7 @@ function browserSyncInit(baseDir, browser) {
    * For more details and option, https://github.com/chimurai/http-proxy-middleware/blob/v0.9.0/README.md
    */
   // server.middleware = proxyMiddleware('/users', {target: 'http://jsonplaceholder.typicode.com', changeOrigin: true});
+  server.middleware = proxyMiddleware('/ServiceOrderServer', {target: backendUrl});
 
   browserSync.instance = browserSync.init({
     startPath: '/',
@@ -48,6 +49,10 @@ browserSync.use(browserSyncSpa({
 
 gulp.task('serve', ['watch'], function () {
   browserSyncInit([path.join(conf.paths.tmp, '/serve'), conf.paths.src]);
+});
+
+gulp.task('serve:local', ['watch'], function () {
+  browserSyncInit([path.join(conf.paths.tmp, '/serve'), conf.paths.src], conf.backend.local);
 });
 
 gulp.task('serve:dist', ['build'], function () {

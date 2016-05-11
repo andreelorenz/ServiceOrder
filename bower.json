@@ -20,7 +20,12 @@
     "semantic": "semantic-ui#^2.1.8"
   },
   "devDependencies": {
-    "angular-mocks": "~1.5.3"
+    "angular-mocks": "~1.5.3",
+    "angular-jwt": "^0.0.9",
+    "body-parser": "^1.15.1",
+    "cors": "*",
+    "passport": "^0.3.2",
+    "kjur-jsrsasign": "jsrsasign#^5.0.11"
   },
   "resolutions": {
     "jquery": "2.1.4",

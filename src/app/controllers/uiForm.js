@@ -1,4 +1,4 @@
-$('.ui.form')
+$('.ui.segment.form')
   .form({
     fields: {
       name     : 'empty',

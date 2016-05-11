@@ -1,4 +1,4 @@
-<form class="ui segment form">
+<!--<form class="ui segment form">
     <div wi-title-diving size=h4 icon="users" text="Personal Data"></div>
     <div class="field">
         <div wi-name-form object=user required="required" value=object></div>
@@ -12,4 +12,13 @@
     <div wi-login-form object=user typePassword="text"></div>
     <h4 class="ui dividing header"></h4>
     <div wi-btn-save object=user icon="checkmark" color="green" action="not defined"></div>
+</form>-->
+<form class="ui segment form" style="box-shadow: 2px 2px 5px 5px #808080">
+    <div wi-header-diving icon="users" text="Personal Data"></div>
+    <div class="field">
+        <div wi-field object=user.name label="Name" type="text" required="true" size="two" name="firstName" placeholder="teste"></div>
+        <div wi-field object=user.last label="Last" type="number" required="true" size="4" state="disabled"></div>
+        <div wi-field object=user.last label="Last" type="number" required="true" size="4" icon="pencil"></div>
+    </div>
+    <div wi-btn-save object=user icon="checkmark" color="green" uiForm=userForm></div>
 </form>

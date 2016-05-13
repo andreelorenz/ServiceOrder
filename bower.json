@@ -25,7 +25,8 @@
     "body-parser": "^1.15.1",
     "cors": "*",
     "passport": "^0.3.2",
-    "kjur-jsrsasign": "jsrsasign#^5.0.11"
+    "kjur-jsrsasign": "jsrsasign#^5.0.11",
+    "innovare": "git@github.com:csvinhal/innovare.git"
   },
   "resolutions": {
     "jquery": "2.1.4",

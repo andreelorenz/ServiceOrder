@@ -3,7 +3,8 @@ export function JsonWebTokenFactory(JsonWebTokenService, $q) {
     var jwt = require('jsonwebtoken');
     
     return {
-        create: create
+        create: create,
+        verify: verify
     };
 
     function create(payload, options) {
@@ -15,6 +16,21 @@ export function JsonWebTokenFactory(JsonWebTokenService, $q) {
                             deferred.reject(err);
                         } else {
                             deferred.resolve(token);
+                        }
+                    });
+                });
+        return deferred.promise;
+    }
+    
+    function verify(token, options) {
+        var deferred = $q.defer();
+        JsonWebTokenService.getSecretOrPrivateKey().then(
+                function (secretOrPrivateKey) {
+                    jwt.sign(token, secretOrPrivateKey, options, function (err, response) {
+                        if (err) {
+                            deferred.reject(err);
+                        } else {
+                            deferred.resolve(response);
                         }
                     });
                 });

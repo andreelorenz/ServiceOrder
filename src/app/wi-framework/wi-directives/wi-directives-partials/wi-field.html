@@ -1,0 +1,19 @@
+<div class="ui equal width form">
+    <div class="field">
+        <label>{{label}}</label>
+        <div class="{{size}} field">
+            <div class="{{class}} fields {{state}}">
+                <div class="field ui corner labeled input ui left icon input">
+                    <input type="{{type}}" ng-model="object" name="{{name}}" 
+                           placeholder="{{placeholder}}" minlength="{{minlength}}" 
+                           maxlength="{{maxlength}}" ng-minlength="{{minlength}}"
+                           ng-blur="object = object +1">
+                    <div ng-show="{{required}} == true" class="ui corner label">
+                        <i class="asterisk icon" style="color: red"></i>
+                    </div>
+                    <i class="{{icon}} icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

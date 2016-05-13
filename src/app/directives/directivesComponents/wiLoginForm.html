@@ -1,0 +1,35 @@
+<div class="field required">
+    <label>Login</label>
+    <div class="two fields">
+        <div class="field">
+            <div class="ui left icon input corner labeled input">
+                <input type="text" ng-model="object.login" placeholder="user.login">
+                <div class="ui corner label">
+                    <i class="asterisk icon" style="color: red"></i>
+                </div>
+                <i class="user icon"></i>
+            </div>
+        </div>
+    </div>
+    <label>Password</label>
+    <div class="two fields">
+        <div class="field">
+            <div class="ui left icon input corner labeled input">
+                <input type="{{typePassword}}" ng-model="object.password" placeholder="********">
+                <div class="ui corner label">
+                    <i class="asterisk icon" style="color: red"></i>
+                </div>
+                <i class="lock icon"></i>
+            </div>
+        </div>
+        <div class="field">
+            <div class="ui left icon input corner labeled input">
+                <input type="{{typePassword}}" ng-model="object.passwordconfirm" placeholder="********">
+                <div class="ui corner label">
+                    <i class="asterisk icon" style="color: red"></i>
+                </div>
+                <i class="lock icon"></i>
+            </div>
+        </div>
+    </div>
+</div>

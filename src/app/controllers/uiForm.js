@@ -1,4 +1,4 @@
-$('.ui.segment.form')
+angular.element('.ui.segment.form')
   .form({
     fields: {
       name     : 'empty',

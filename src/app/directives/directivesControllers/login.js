@@ -3,7 +3,7 @@ angular.module("serviceOrder").directive("wiLogin", function () {
         templateUrl: "app/directives/directivesComponents/wiLoginPanel.html",
         scope: {
             object: "=",
-            typePassword: "@",
+            typePassword: "@"
         }
     };
 });

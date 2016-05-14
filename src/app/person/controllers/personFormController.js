@@ -9,9 +9,9 @@
         var vm = this;
 
         vm.initialize = function () {
-            mainUsers.person = {};
+            //  mainUsers.person = {};
             if ($stateParams.idPerson) {
-                mainUsers.loadingPerson($stateParams.idPerson);
+              //  mainUsers.loadingPerson($stateParams.idPerson);
             }
         };
 
@@ -26,7 +26,7 @@
 
         vm.loadingPerson = function (id) {
             PersonService.loadPersonId(id).then(function (response) {
-                mainUsers.person = response.data;
+              //  mainUsers.person = response.data;
             }, function (erro) {
                 alert(erro);
             });
